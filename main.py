@@ -14,6 +14,8 @@ import os
 
 MY_EMAIL = "soumilbiswas87@gmail.com"
 MY_PASSWORD = "vsitiuuiomjphrnc"
+MY_EMAIL = os.environ.get("MY_EMAIL")
+MY_PASSWORD = os.environ.get("MY_PASSWORD")
 
 today = datetime.now()
 today_tuple = (today.month, today.day)
